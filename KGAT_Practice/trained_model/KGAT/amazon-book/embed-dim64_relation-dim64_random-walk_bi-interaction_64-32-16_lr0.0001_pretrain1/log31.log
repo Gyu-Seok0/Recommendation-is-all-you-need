@@ -1,0 +1,17 @@
+2022-06-27 20:33:47,018 - root - INFO - Namespace(Ks='[20,40,60,80,100]', aggregation_type='bi-interaction', cf_batch_size=1024, cf_l2loss_lambda=1e-05, cf_print_every=1, conv_dim_list='[64,32,16]', data_dir='datasets/', data_name='amazon-book', embed_dim=64, evaluate_every=10, kg_batch_size=2048, kg_l2loss_lambda=1e-05, kg_print_every=1, laplacian_type='random-walk', lr=0.0001, mess_dropout='[0.1,0.1,0.1]', n_epoch=1000, pretrain_embedding_dir='datasets/pretrain/', pretrain_model_path='trained_model/model.pth', relation_dim=64, save_dir='trained_model/KGAT/amazon-book/embed-dim64_relation-dim64_random-walk_bi-interaction_64-32-16_lr0.0001_pretrain1/', seed=2022, stopping_steps=10, test_batch_size=10000, use_pretrain=1)
+2022-06-27 20:34:26,526 - root - INFO - n_users:           70679
+2022-06-27 20:34:26,526 - root - INFO - n_items:           24915
+2022-06-27 20:34:26,526 - root - INFO - n_entities:        25011
+2022-06-27 20:34:26,526 - root - INFO - n_users_entities:  95690
+2022-06-27 20:34:26,526 - root - INFO - n_relations:       26
+2022-06-27 20:34:26,527 - root - INFO - n_h_list:          1305228
+2022-06-27 20:34:26,527 - root - INFO - n_t_list:          1305228
+2022-06-27 20:34:26,527 - root - INFO - n_r_list:          1305228
+2022-06-27 20:34:26,527 - root - INFO - n_cf_train:        652514
+2022-06-27 20:34:26,527 - root - INFO - n_cf_test:         193920
+2022-06-27 20:34:26,527 - root - INFO - n_kg_train:        1305228
+2022-06-27 20:34:27,443 - torch.distributed.distributed_c10d - INFO - Added key: store_based_barrier_key:1 to store for rank: 1
+2022-06-27 20:34:27,464 - torch.distributed.distributed_c10d - INFO - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+2022-06-27 20:34:30,018 - root - INFO - DistributedDataParallel(
+  (module): Linear(in_features=5, out_features=3, bias=True)
+)
