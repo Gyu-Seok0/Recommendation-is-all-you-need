@@ -1,0 +1,16 @@
+<전반적인 과정설명>
+
+1. 데이터셋을 불러온다
+2. DatasetLoader를 만든다. 이때, train / valid dataset을 구분하여 만든다.
+3. Model을 만든다.
+4. BatchIterator를 만든다. (사실 pytorch에서 제공하는 DataLoader을 이용하면 2,4번 부분이 한번에 해결된다)
+5. 학습한다. 
+6. 학습이 1epoch 끝나면, validation을 수행한다.
+7. early stopping을 진행한다.
+
+이렇게 모든 학습과정이 끝나면, 특정 user와 item에 대해서 우리는 rating을 도출할 수 있다.
+8. model_valid 과정을 통해 prediction을 진행한다.
+9. 실제 유저의 평점과 예측된 값이 맞는지 확인해보면 된다.
+
+논문에서는 Implicit feedback을 기반으로 학습을 진행했는데, 여기서는 explicit dataset을 이용했다.
+또한 해당 코드에서는 negative sampling을 사용하지 않았다.
